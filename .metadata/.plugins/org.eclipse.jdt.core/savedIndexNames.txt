@@ -7,6 +7,7 @@ INDEX VERSION 1.130+C:\Users\Russell\Documents\GitHub\cosc442-gehret-project5\.m
 1416821754.index
 2153270132.index
 2442888519.index
+1777233964.index
 3814180264.index
 1677593041.index
 152244849.index
@@ -18,4 +19,3 @@ INDEX VERSION 1.130+C:\Users\Russell\Documents\GitHub\cosc442-gehret-project5\.m
 1760935762.index
 3724307573.index
 3465765727.index
-1107826757.index

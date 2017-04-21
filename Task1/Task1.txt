@@ -1,0 +1,518 @@
+Test Generation Using the W-method. V2.0. August 1, 2013
+
+Enter filename: BookExampleFSM.txt
+FSM input from:  BookExampleFSM.txt
+States: 5
+Edges 10
+Input alphabet:
+a
+b
+
+Output alphabet:
+0
+1
+
+From 	 Input/Output 	 To
+1	 a/0		 1
+1	 b/1		 4
+2	 b/1		 5
+2	 a/0		 1
+3	 a/0		 5
+3	 b/1		 1
+4	 b/1		 4
+4	 a/1		 3
+5	 a/1		 2
+5	 b/1		 5
+
+Transition cover set (P). 11 entries.
+Empty a b ba baa baaa baaaa baaab baab bab bb 
+
+W Set. 4 entries.
+a aa aaa baaa 
+
+Number of Test Cases :29
+Test cases: [a, aa, aaa, aaaa, abaaa, ba, baa, baaa, baaaa, baaaaa, baaaaaa, baaaaaaa, baaaabaaa, baaaba, baaabaa, baaabaaa, baaabbaaa, baaba, baabaa, baabaaa, baabbaaa, baba, babaa, babaaa, babbaaa, bba, bbaa, bbaaa, bbbaaa]
+a
+
+FSM execution begins. Input: a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0
+aa
+
+FSM execution begins. Input: a a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:00
+aaa
+
+FSM execution begins. Input: a a a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:000
+aaaa
+
+FSM execution begins. Input: a a a a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0000
+abaaa
+
+FSM execution begins. Input: a b a a a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:01101
+ba
+
+FSM execution begins. Input: b a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:11
+baa
+
+FSM execution begins. Input: b a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:110
+baaa
+
+FSM execution begins. Input: b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:1101
+baaaa
+
+FSM execution begins. Input: b a a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:11010
+baaaaa
+
+FSM execution begins. Input: b a a a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:110100
+baaaaaa
+
+FSM execution begins. Input: b a a a a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:1101000
+baaaaaaa
+
+FSM execution begins. Input: b a a a a a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:11010000
+baaaabaaa
+
+FSM execution begins. Input: b a a a a b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:110101101
+baaaba
+
+FSM execution begins. Input: b a a a b a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:110111
+baaabaa
+
+FSM execution begins. Input: b a a a b a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:1101110
+baaabaaa
+
+FSM execution begins. Input: b a a a b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:11011100
+baaabbaaa
+
+FSM execution begins. Input: b a a a b b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:110111100
+baaba
+
+FSM execution begins. Input: b a a b a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:11011
+baabaa
+
+FSM execution begins. Input: b a a b a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:110110
+baabaaa
+
+FSM execution begins. Input: b a a b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:1101100
+baabbaaa
+
+FSM execution begins. Input: b a a b b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: b Next state: 5 Output: 1
+Current state: 5
+ Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:11011100
+baba
+
+FSM execution begins. Input: b a b a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: b Next state: 1 Output: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:1110
+babaa
+
+FSM execution begins. Input: b a b a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: b Next state: 1 Output: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:11100
+babaaa
+
+FSM execution begins. Input: b a b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: b Next state: 1 Output: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:111000
+babbaaa
+
+FSM execution begins. Input: b a b b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: b Next state: 1 Output: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:1111101
+bba
+
+FSM execution begins. Input: b b a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+
+FSM execution completed. Final state: 3
+Output pattern:111
+bbaa
+
+FSM execution begins. Input: b b a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:1110
+bbaaa
+
+FSM execution begins. Input: b b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:11101
+bbbaaa
+
+FSM execution begins. Input: b b b a a a Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: a Next state: 2 Output: 1
+
+FSM execution completed. Final state: 2
+Output pattern:111101
